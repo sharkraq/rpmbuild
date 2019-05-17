@@ -33,7 +33,7 @@ tar zxvf %{SOURCE2} -C %{_topdir}/BUILD
 tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
 
 %build
-./configure \
+./configure --prefix=%{buildroot}/usr/local/nginx \
     --with-http_ssl_module \
     --with-openssl=%{_topdir}/BUILD/openssl-1.1.1 \
     --with-pcre=%{_topdir}/BUILD/pcre-8.43 \
@@ -56,7 +56,7 @@ tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
 
 %install
 mkdir -p %{buildroot}/usr/local/nginx
-make install prefix=%{buildroot}/usr/local/nginx
+make install
 
 %files
 %defattr(‑,root,root)
