@@ -25,10 +25,13 @@ Group:          AIR Development
 Nginx Reverse Proxy
 
 %prep
-%setup ‑a 0
-%setup ‑a 1
-%setup ‑a 2
-%setup ‑a 3
+cd %{_topdir}/BUILD
+tar zxvf %{_topdir}/SOURCES/${Source0} .
+tar zxvf %{_topdir}/SOURCES/${Source1} .
+tar zxvf %{_topdir}/SOURCES/${Source2} .
+tar zxvf %{_topdir}/SOURCES/${Source3} .
+
+
 
 
 
