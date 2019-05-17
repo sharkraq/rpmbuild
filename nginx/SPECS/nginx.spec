@@ -55,7 +55,7 @@ tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
 #fi
 
 %install
-make install prefix=$RPM_BUILD_ROOT/usr/local/nginx
+make install prefix=%{buildroot}/usr/local/nginx
 
 %files
 %defattr(‑,root,root)
