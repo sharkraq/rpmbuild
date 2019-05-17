@@ -26,10 +26,10 @@ Nginx Reverse Proxy
 
 %prep
 cd %{_topdir}/BUILD
-tar zxvf %{_topdir}/SOURCES/${Source0} .
-tar zxvf %{_topdir}/SOURCES/${Source1} .
-tar zxvf %{_topdir}/SOURCES/${Source2} .
-tar zxvf %{_topdir}/SOURCES/${Source3} .
+tar zxvf %{_topdir}/SOURCES/%{SOURCE0} .
+tar zxvf %{_topdir}/SOURCES/%{SOURCE1} .
+tar zxvf %{_topdir}/SOURCES/%{SOURCE2} .
+tar zxvf %{_topdir}/SOURCES/%{SOURCE3} .
 
 
 
