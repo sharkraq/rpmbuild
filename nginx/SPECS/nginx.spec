@@ -25,11 +25,9 @@ Group:          AIR Development
 Nginx Reverse Proxy
 
 %prep
-%setup -a 0
-%setup -a 1
-%setup -a 2
-%setup -a 3
-
+tar xvf %{SOURCE1} -C %{buildroot}
+tar xvf %{SOURCE2} -C %{buildroot}
+tar xvf %{SOURCE3} -C %{buildroot}
 
 
 
@@ -37,9 +35,9 @@ Nginx Reverse Proxy
 %build
 ./configure \
     --with-http_ssl_module \
-    --with-openssl=%{_topdir}/BUILD/openssl-1.1.1 \
-    --with-pcre=%{_topdir}/BUILD/pcre-8.42 \
-    --with-zlib=%{_topdir}/BUILD/zlib-1.2.11
+    --with-openssl=%{buildroot}/openssl-1.1.1 \
+    --with-pcre=%{buildroot}/pcre-8.42 \
+    --with-zlib=%{buildroot}/zlib-1.2.11
     make
 
 %pre
