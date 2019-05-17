@@ -26,6 +26,10 @@ Nginx Reverse Proxy
 
 %prep
 %setup ‑q
+%setup ‑q 1
+%setup ‑q 2
+%setup ‑q 3
+
 
 %build
 ./configure \
