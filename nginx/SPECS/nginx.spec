@@ -24,7 +24,7 @@ Group:          AIR Development
 %description
 Nginx Reverse Proxy
 
-%prep
+#%prep
 echo $PWD
 tar zxvf %{SOURCE0} -C %{_topdir}/BUILD
 tar zxvf %{SOURCE1} -C %{_topdir}/BUILD
