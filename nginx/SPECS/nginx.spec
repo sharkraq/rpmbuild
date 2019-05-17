@@ -1,4 +1,4 @@
-%define _topdir     /var/lib/jenkins/rpmbuild
+%define _topdir     /var/lib/jenkins/workspace/Nginx-Linux-RPM
 %define name        nginx 
 %define release        1
 %define version     1.16.0
