@@ -14,7 +14,7 @@ Source0:	nginx-1.16.0.tar.gz
 Source1:	openssl-1.1.1.tar.gz
 Source2:	pcre-8.43.tar.gz
 Source3:	zlib-1.2.11.tar.gz
-Prefix:         /usr/local/nginx
+Prefix:         /usr
 Group:          AIR Development
 
 
@@ -33,7 +33,7 @@ tar zxvf %{SOURCE2} -C %{_topdir}/BUILD
 tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
 
 %build
-./configure --prefix=%{buildroot}/usr/local/nginx \
+./configure \
     --with-http_ssl_module \
     --with-openssl=%{_topdir}/BUILD/openssl-1.1.1 \
     --with-pcre=%{_topdir}/BUILD/pcre-8.43 \
@@ -55,8 +55,7 @@ tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
 #fi
 
 %install
-mkdir -p %{buildroot}/usr/local/nginx
-make install
+make install prefix=$RPM_BUILD_ROOT/usr
 
 %files
 %defattr(‑,root,root)
