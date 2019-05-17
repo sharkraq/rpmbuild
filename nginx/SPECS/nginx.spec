@@ -24,7 +24,7 @@ Group:          AIR Development
 %description
 Nginx Reverse Proxy
 
-%prep
+#%prep
 
 %setup
 %setup -T -D -a 1
