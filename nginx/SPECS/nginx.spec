@@ -25,10 +25,12 @@ Group:          AIR Development
 Nginx Reverse Proxy
 
 %prep
-%setup ‑q
-%setup ‑q 1
-%setup ‑q 2
-%setup ‑q 3
+%setup ‑a 0
+%setup ‑a 1
+%setup ‑a 2
+%setup ‑a 3
+
+
 
 
 %build
