@@ -55,6 +55,7 @@ tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
 #fi
 
 %install
+mkdir -p %{buildroot}/usr/local/nginx
 make install prefix=%{buildroot}/usr/local/nginx
 
 %files
