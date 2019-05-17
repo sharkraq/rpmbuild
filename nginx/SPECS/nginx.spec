@@ -25,12 +25,9 @@ Group:          AIR Development
 Nginx Reverse Proxy
 
 %prep
-%{SOURCE0}
-%{SOURCE1}
-%{SOURCE2}
-%{SOURCE3}
 
-
+%setup
+%setup -T -D -a 1
 
 
 
