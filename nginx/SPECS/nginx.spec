@@ -74,7 +74,7 @@ make install prefix=$RPM_BUILD_ROOT/usr/local/nginx
 #fi
 %postun
 
-%changelog
-* Thursday May 16 2019 <malvarenga@air-worldwide.com> 
-- Initial Build.
+#%changelog
+#* Thursday May 16 2019 <malvarenga@air-worldwide.com> 
+#- Initial Build.
 
