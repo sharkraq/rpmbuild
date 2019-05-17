@@ -1,8 +1,8 @@
-%define _topdir     /var/lib/jenkins/workspace/Nginx-Linux-RPM/nginx
+%define _topdir     /var/lib/jenkins/workspace/Nginx-Linux-RPM/
 %define name        nginx 
 %define release        1
 %define version     1.16.0
-%define buildroot %{_topdir}/%{name}‑root
+%define buildroot %{_topdir}/%{name}‑%{version}‑root
 
 BuildRoot:    %{buildroot}
 Summary:         AIR nginx
