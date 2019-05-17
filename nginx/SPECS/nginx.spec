@@ -36,7 +36,7 @@ Nginx Reverse Proxy
     --with-http_ssl_module \
     --with-openssl=%{_topdir}/BUILD/openssl-1.1.1 \
     --with-pcre=%{_topdir}/BUILD/pcre-8.42 \
-    --with-zlib=%{_topdir}/BUILD/zlib-1.2.11 \
+    --with-zlib=%{_topdir}/BUILD/zlib-1.2.11
     make
 
 %pre
