@@ -30,7 +30,6 @@ tar zxvf %{SOURCE0} -C %{_topdir}/BUILD
 tar zxvf %{SOURCE1} -C %{_topdir}/BUILD
 tar zxvf %{SOURCE2} -C %{_topdir}/BUILD
 tar zxvf %{SOURCE3} -C %{_topdir}/BUILD
-cd /var/lib/jenkins/workspace/Nginx-Linux-RPM/nginx/BUILD/nginx-1.16.0
 
 %build
 ./configure \
