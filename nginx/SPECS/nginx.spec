@@ -25,9 +25,9 @@ Group:          AIR Development
 Nginx Reverse Proxy
 
 %prep
-tar xvf %{SOURCE1} -C %{buildroot}
-tar xvf %{SOURCE2} -C %{buildroot}
-tar xvf %{SOURCE3} -C %{buildroot}
+tar zxvf %{SOURCE1} -C %{buildroot}
+tar zxvf %{SOURCE2} -C %{buildroot}
+tar zxvf %{SOURCE3} -C %{buildroot}
 
 
 
